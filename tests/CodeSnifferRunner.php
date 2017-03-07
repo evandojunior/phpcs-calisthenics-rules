@@ -16,6 +16,10 @@ final class CodeSnifferRunner
             define('PHP_CODESNIFFER_VERBOSITY', 0);
         }
 
+        if (!defined('PHP_CODESNIFFER_CBF')) {
+            define('PHP_CODESNIFFER_CBF', false);
+        }
+
         new Tokens();
     }
 
